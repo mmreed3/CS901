@@ -1,0 +1,503 @@
+\documentclass[t, hyperref={colorlinks=true}, compress]{beamer}
+\mode<presentation>
+%\usetheme{Wisconsin} % this did not work 
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage{bm}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{color}
+\usepackage{hyperref}
+\usepackage{graphicx}
+
+
+
+
+\usepackage{fontawesome}
+\DeclareFontFamily{U}{FontAwesomeOne}{}
+\DeclareFontShape{U}{FontAwesomeOne}{m}{n}{<-> FontAwesome--fontawesomeone}{}
+\DeclareRobustCommand\FAone{\fontencoding{U}\fontfamily{FontAwesomeOne}\fontseries{m}\fontshape{n}\selectfont}
+\DeclareFontFamily{U}{FontAwesomeTwo}{}
+\DeclareFontShape{U}{FontAwesomeTwo}{m}{n}{<-> FontAwesome--fontawesometwo}{}
+\DeclareRobustCommand\FAtwo{\fontencoding{U}\fontfamily{FontAwesomeTwo}\fontseries{m}\fontshape{n}\selectfont}
+\DeclareFontFamily{U}{FontAwesomeThree}{}
+\DeclareFontShape{U}{FontAwesomeThree}{m}{n}{<-> FontAwesome--fontawesomethree}{}
+\DeclareRobustCommand\FAthree{\fontencoding{U}\fontfamily{FontAwesomeThree}\fontseries{m}\fontshape{n}\selectfont}
+
+
+\usepackage{fontawesome}
+\usepackage{mathptmx}
+\usepackage{anyfontsize}
+\usepackage{t1enc}
+ 
+
+\hypersetup{linkcolor=msuyellow,hidelinks}
+\setbeamertemplate{mini frames}[default]
+\setbeamertemplate{navigation symbols}{}
+\hypersetup{linkcolor=msuyellow,hidelinks}
+\usepackage{tikz}
+\usetikzlibrary{snakes}
+
+
+\addtobeamertemplate{navigation symbols}{}{%
+    \usebeamerfont{footline}%
+    \usebeamercolor[fg]{footline}%
+    \hspace{1em}%
+    \insertframenumber
+}
+
+
+
+
+\title[\color{white} ]{\small Dissertation Proposal: Health Care Costs and Household Finance}
+ \author{Madeline Reed}
+
+
+\date[Oct 2nd]
+
+\subject{Talks}
+\newcommand{\FAsize}{100000}
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}  
+
+\section{Motivation}
+
+%%%out-of-pocket summary of lit- review. 
+%\begin{frame}{Prices}
+
+%Out-of-pocket costs for health care expenditures contribute to a growing share of households’ consumption relative to income.
+
+%https://www.usatoday.com/story/news/nation-now/2018/07/03/video-rescue-woman-trapped-injured-boston-subway/756068002/
+
+
+
+
+%\bigskip
+% Consumers react to the price of goods and services. 
+
+ 
+% \bigskip
+% $ \uparrow$ prices $\downarrow$ consumption. 
+
+%  \bigskip
+% $\downarrow$ prices, $ \uparrow$ consumption. 
+% \bigskip 
+% \par
+% \centering {
+% {\fontsize{80}{80}\faHeartbeat}
+% }
+%\end{frame}
+
+\begin{frame}{One-in-Four Adults Are Forgoing Care Due to Out-of-Pocket Costs}
+
+\bigskip
+\bigskip
+\bigskip
+\centering {
+{\fontsize{80}{80}\selectfont {\faMale \space \faMale \space \faMale \space {\textcolor{gray}\faMale} }}
+}
+ 
+\end{frame}
+
+\begin{frame}
+\centering
+\includegraphics[scale=.73]{KFF_ded_income.png} 
+%\includegraphics[scale=.7]{Gross_edit.png} 
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{Framework: Liquidity and Health Care} 
+\begin{figure}
+\includegraphics[scale=.42]{Gross_v55.png} \caption{Gross et. al (2020)}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Framework: Liquidity and Health Care} 
+\includegraphics[scale=.35]{Gross_v6.png} 
+\footnotesize Gross et. al (2020)
+\end{frame}
+
+
+\section{Study 1}
+
+\begin{frame}{Study 1: The Liquidity Sensitivity of Out-of-Pocket Health Care Expenditure: Effects from the EITC}
+\begin{itemize}
+\item Earned Income Tax Credit (EITC)
+\bigskip
+\item MEPS data 2010 to 2016 
+\bigskip
+\begin{itemize}
+\item Tracks health care use and costs at a monthly level
+\item Flags people with low or no deductibles, as well as HDHPs
+\item Restricted Data: State of residence and measures of household savings 
+\end{itemize}
+\bigskip
+\bigskip
+\item Methods: Difference-in-Difference-in-Differences (DDD) Treatment in the model is the interaction of state, EITC eligibility and treatment months.  
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Study 1: The Liquidity Sensitivity of Out-of-Pocket Health Care Expenditure: Effects from the EITC} 
+\begin{itemize}
+\item	How does an exogenous \textbf{income shock} change health care consumption?
+\bigskip
+\item	Is the response to an exogenous income shock larger for individuals in employer sponsored plans with \textbf{higher deductibles}?
+\bigskip
+\item Is the response to an exogenous income shock larger for individuals in employer sponsored plans \textbf{without savings}?
+\bigskip
+\item Is the response to an exogenous income shock larger for \textbf{Black people}? 
+\end{itemize}
+
+\end{frame}
+
+\section{Study 2}
+
+
+\begin{frame}{Study 2- Out-of-Pocket Health Care Expenditure: Effects on Household Food Security}
+\centering
+\begin{itemize}
+\item Gundersen and Gruber (2001)
+\item Data: MEPS 2016-2017
+\begin{itemize}
+\item Outcome: Food Insecurity at Round 4.
+\smallskip
+\item Financial assets in protecting households from food insecurity after change in out-of-pocket cost
+\end{itemize}
+\item Descriptive Method: Lagged Dependent Variable Model  
+\end{itemize}
+\begin{figure}
+    \centering
+\includegraphics[scale=.3]{FS_panel_aug20.png}
+    \caption{MEPS Panel 21: 2016 - 2017}\label{FS_panel}
+\end{figure}
+\end{frame}
+
+\begin{frame}{Study 2- Out-of-Pocket Health Care Expenditure: Effects on Household Food Security} 
+\begin{itemize}
+\item How does a change in the relative budget share on \textbf{out-of-pocket costs} affect the change in \textbf{household food security}? 
+\bigskip 
+\bigskip 
+\item Does the amount of \textbf{savings} mediate the effect of a change in the relative budget share on health expenditure on household food security?  
+\end{itemize}
+
+\end{frame}
+
+
+
+
+\begin{frame}{Study 3: The Effects of the Pandemic Relief on Basic Health Care Consumption}
+\centering
+\begin{itemize}
+\item Household Pulse Survey (collected April 2020- July 2021) 
+\begin{itemize}
+\item Census
+\item Cross- sectional 
+\item Bi-weekly
+\item Large Sample N= 76,000 Households
+\end{itemize}
+\bigskip
+\bigskip
+\item Delaying or foregoing care
+\bigskip
+\bigskip
+\item State level
+\begin{itemize} 
+\item Lock-downs 
+\item Ending of the federally funded unemployment benefits. Federal Pandemic Unemployment Compensation (FPUC).
+\item Vaccination rates
+\item Cell phone mobility data 
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Study 3: The Effects of the Pandemic Relief on Basic Health Care Consumption} 
+\begin{itemize} 
+\bigskip
+\bigskip
+\item What factors are associated with reduction in \textbf{delaying or forgoing health care} during the COVID-19 pandemic? 
+\bigskip
+\bigskip
+\bigskip
+\item 	How did \textbf{Federal Pandemic Assistance} reduce this delaying of care, based on state differences?
+\end{itemize}
+\end{frame}
+
+
+
+\begin{frame}{Contributions}
+\begin{itemize}
+
+\item Different test of liquidity sensitivity of health care. Population is U.S. working age adults.
+\bigskip
+\item Adds to food security literature by investigating relationship between out-of-pocket costs and food insecurity
+\bigskip
+\item Spill-over effects of withdrawal of Federal Pandemic Unemployment Compensation. 
+\bigskip
+\item Add to overarching literature of public health, insurance, household finance by investigating health care seeking among people experiencing financial hardship, especially liquidity constrained
+\end{itemize}
+
+\end{frame}
+
+
+\section{Appendix- paper 1}
+
+\begin{frame}
+\begin{figure}
+
+\includegraphics[scale=.45]{Gross_V_newpaper.png}
+    \caption{Gross et al. 2021}
+\end{figure}
+
+\end{frame}
+
+\begin{frame}{Sample Size 1: The Liquidity Sensitivity of Out-of-Pocket Health Care Expenditure: Effects from the EITC} 
+\begin{table}
+\begin{tabular}{| cccccc |}\label{STATE_EITC}
+\textbf{Plan Deductible} & \textbf{White} & \textbf{Black}&	\textbf{Latinx}&	\textbf{Other} & \textbf{Total} \\
+\hline
+No	& 748 &	 459& 616 & 520 & 2,775 \\
+Low &	 2,061 &  811  & 890 &  822  & 5,104 \\
+HDHP	&1,437	&	393	&	  413& 451& 2,936	\\
+\hline
+\end{tabular}
+Asians, as well as Hispanics and Blacks, are oversampled.
+\end{table}
+\end{frame}
+
+
+\begin{frame}{Sample Size 1: The Liquidity Sensitivity of Out-of-Pocket Health Care Expenditure: Effects from the EITC} 
+\begin{table}
+\begin{tabular}{| cccccc |}
+\textbf{Plan Deductible} & \textbf{White} & \textbf{Black}&	\textbf{Latinx}&	\textbf{Other} & \textbf{Total} \\
+\hline
+EITC eligible	& 387 & 290 & 393 & 202 & 1,272  \\
+Non- EITC eligible &	 3,859 &  1,373  & 1,526 &   1,591  & 8,349 \\
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+\begin{frame}
+\begin{table}\caption{Table of Changes in State EITC} 
+\begin{tabular}{| ccccc |}
+\textbf{Year} & \textbf{New} & \textbf{Increase}&	\textbf{Decrease} \\
+\hline
+2010	&&	KS &	NJ  \\
+2011 &	CT&	ME &	WI	  \\
+2012	&	&		&	MI	\\
+2013	&&	IL, IA	&CT, KS, NC	\\
+2014	 & &	CT, IA, MD, OH, OR		& \\
+2015 &	CO& 	MD, MA, NJ,	&RI	 \\
+2016& 	CA &	MD, NJ, RI	&	\\
+\hline
+\end{tabular}
+\begin{minipage}{8cm}
+		\footnotesize{
+The column "New" displays states which introduced state EITC during the year. The columns "Increase"  and "Decrease" means a state changed the generosity of its state EITC during a given year.}
+\end{minipage}
+\end{table}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{equation2}
+\begin{frame}{State EITC} 
+\begin{multline}
+Y_{it} =  \beta_{1}EITC_{i}  * FebMarch_{t} *State_{s} +\beta_{2}FebMarch_{t}*EITC_{i} + \\  
+\beta_{3} State_{s} *EITC_{i} + 
+\beta_{4} FebMarch_{t} *State_{s} +  \beta_{5} EITC_{i}  +\beta_{6}State_{s}  \\ 
+  +\beta_{7}FebMarch_{t}+  \beta_{7} Year_{t}  + \beta_{8}  X_{it}  +\varepsilon_{it}   \label{eq_stateEITC} 
+\end{multline}
+Where $Y_{it}$ is monthly out-of-pocket health spending for $individual_{i}$ in $year_{t}$ and $state_{s}$ is the state that an individual lives and is eligible for state EITC. Person level controls, $X_{it}$.
+
+\bigskip
+\bigskip
+
+\footnotesize Controls: race, health status, mental health status , marriage status, poor , age, age squared, age cubed, number of people in the household, number of children in the household, education level, plan deductible (1=no , 2=low, 3=high), month, region (North, South, East, West) and year fixed effects (2011 - 2016). Cluster at the Primary Sampling Unit. 
+\end{frame}
+
+
+
+\section{stacked_dd}
+\begin{frame}{Stacked difference-in-differences}
+
+\begin{itemize}
+\item State data are divided into ``timing groups'' defined by the year in which they experience a change in their state- EITC. States which experience the change in the same year are in the same timing group. 
+\item For each timing groups, control group is created which includes all of the states which never adapted EITC. A separate dataset is created for each timing group. In each dataset, states which changed EITC are considered the treatment group, and those which did not in that year form the control group. 
+\item  In each data set event time is defined as years since the EITC change. 
+\item Each data set is stacked together to create one "long" data set. In this data set, every treated state is included once, however each control state is included for each timing group.
+\end{itemize}
+
+
+
+\end{frame}
+
+\section{appendix_2}
+
+
+%% %CHANGE TO FOOD SECUIRTY SAMPLE SIZE> 
+\begin{frame}{Sample Size 2: } 
+\begin{table}[!htbp]\caption{Food security round 4, by race} 
+\begin{tabular}{| cccccc |}
+\textbf{Food Security} & \textbf{White} & \textbf{Black}&	\textbf{Latinx}&	\textbf{Other} & \textbf{Total} \\
+\hline
+Secure	& 2,356 &	 877& 1,154 & 470& 4,857 \\
+Insecure &	 347 &  311  & 370 &  82  & 1,110\\
+\hline
+\end{tabular}
+\end{table}
+\end{frame}
+
+
+
+%% %CHANGE TO FOOD SECUIRTY SAMPLE SIZE> 
+\begin{frame}{Transition of Food Security}
+\begin{table}[!htbp]
+\begin{tabular}{l cccc}
+ & \multicolumn{2}{c}{Marginal Security Round 4} \\
+Marginal Security Round 2 & Secure & Insecure & Total \\
+\hline
+Secure &4241&350&4591 \\
+Insecure &569&755&1324\\
+\hline
+Total&4810&1105&5915\\
+\hline
+
+\end{tabular}
+\end{table}
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+\begin{frame}{Lagged Dependent Variable Model}
+\begin{equation} \label{FS_lagged}
+Y_{it} = \beta_{1}\textbf{Y'}_{it-1}  +  \beta_{2}\textbf{X'}_{it} +  \beta_{3}\textbf{D}_{it}  +  \textbf{error}_{it} 
+\end{equation}
+\bigskip
+\bigskip
+
+where $Y_{it}$ is food insecurity for $household_{i}$ at $t=4$. The lagged dependent variable or the food security status for each household at $t=2$ is included as $\textbf{Y'}_{it-1}$.  Again, $\textbf{X'}_{it}$ are demographic characteristics and $\textbf{D}_{it}$ is an indicator of a household's out-of-pocket costs.
+\end{frame}
+
+
+\begin{frame}{Lagged Dependent Variable Model - 2}
+\begin{multline} \label{FS_lagged2}
+Y_{it} = \beta_{1}\textbf{Y'}_{it-1}  +  \beta_{2}\textbf{X'}_{it} +  \beta_{3}\textbf{D}_{it}*\textbf{Z}_{it} +\beta_{3}\textbf{D}_{it}*\textbf{W}_{it} +  \textbf{error}_{it} 
+\end{multline}
+
+A household’s prior round food security is included in the model $\textbf{Y'}_{it-1} $ along with a vector of demographic controls  $\textbf{X'}_{it} $. The treatment variable of household out-of-pocket costs is  $\textbf{D}_{it}$ , the round 3 out-of-pocket costs. $ \textbf{Z}_{it}$ is an indicator for whether the household was food secure in round 2.   $W_{it} $ is an indicator if the household was food insecure in round 2. 
+\end{frame}
+
+
+\begin{frame}{Lagged Dependent Variable Model}
+\begin{itemize}
+\item Using a lagged dependent variable in a cross-sectional equation provides a simple way to account for historical factors that cause current differences in the dependent variable that are difficult to account for in other ways.
+\bigskip
+\item EX: Some households live further away from grocery store. Many of the same unobserved factors contribute to both high current and past food insecurity.
+\end{itemize}
+\end{frame}
+
+
+
+
+
+
+
+\begin{frame}
+\begin{figure}
+    \centering 
+\includegraphics[scale=.27]{/Users/madelinereed/Dropbox/Pulse/All_phases/Data/output/forgone_line_policy.png}
+\footnotesize  
+    \caption{Forgone care among those with Job loss. Note: Before 4/14/21  'since March 2020'. Starting on 4/14  'in the last 4 weeks'}
+\end{figure}
+\end{frame}
+
+
+\begin{frame}{The Bidirectional Relationship Between Food Security and Health Costs}
+\begin{figure}
+\includegraphics[scale=.3]{Johnson_2021.jpg}
+    \caption{Johnson et al 2021}
+\end{figure}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\footnotesize A classified as "marginally food insecure" if they indicated concerns regarding the ability to afford food in 1 or more of the following 10 questions:
+
+\begin{itemize}
+\footnotesize
+\item How often in the last 30 days anyone in the household worried whether food would run out before getting money to buy more? 
+\item How often in the last 30 the food purchased didn’t last and the person/household didn’t have money to get more? 
+\item	 How often in the last 30 the person/household could not afford to eat balanced meals?
+\item In the last 30 days did the person/household reduce or skip meals because there wasn’t enough money for food?
+\item How many meals were skipped in the last 30 days? 
+\item In the last 30 days did the person/household ever eat less because there wasn’t enough money for food? 
+\item	In the last 30 days was the person/household ever hungry but didn’t eat because there wasn’t enough money for food? 
+\item	 In the last 30 days did anyone in the household lose weight because there wasn’t enough money for food?
+\item In the last 30 days did anyone in the household not eat for a whole day because there wasn’t enough money for food?
+\item	 How many days in the last 30 days has anyone in the household not eaten for a whole day because there wasn’t enough money for food?
+\end{itemize}
+\end{frame}
+
+\section{timeline}
+
+\begin{frame}{Time-line ?}
+\begin{itemize}
+\footnotesize
+\item \textbf{September} Finish Data analysis for Covid-19 paper and get the state variables from RDC
+\bigskip
+\item \textbf{October} Finish Covid-19 paper
+\bigskip
+\item \textbf{November} Finish Data analysis for Study 1
+\bigskip
+\item \textbf{December} Finish write up of Paper 1
+\bigskip
+\item \textbf{Jan}  Send papers 1 and 3 to committee
+\bigskip
+\item \textbf{February}  Finish Paper 2 data analysis (waiting on RDC approval). 
+\bigskip
+\item \textbf{March} Finish Paper 2 writing
+\bigskip
+\item	\textbf{April } Write Dissertation
+\bigskip
+\item	\textbf{May to ??} Write Dissertation
+\end{itemize}
+\end{frame}
+
+
+
+
+\end{document}
+
+
